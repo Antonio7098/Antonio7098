@@ -12,8 +12,8 @@
 <br>
 
 - 👋 Hey, I’m @Antonio7098.
-- 👀 Hobbies: Gym, Sports and Guitars.
-- 🌱 Currently upgrading my MATLAB language skills
+- 👀 Hobbies: Gym, Camping and Guitars.
+- 🌱 Currently upgrading my JavaScript
 - 📫 Open for a job(s)
 
 - **Languages**:
