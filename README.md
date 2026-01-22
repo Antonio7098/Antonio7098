@@ -1,77 +1,178 @@
-# Hi there, I'm Antonio Borge Rees! 👋
+# Hi, I’m **Antonio Borge Rees** 👋
 
-### Software Engineer | Full Stack Developer | Mathematics Graduate
+### Software Engineer · Agentic Orchestration · Frontier AI Systems
 
-I'm a passionate software engineer focused on building **robust, scalable web applications** and **enterprise-grade backend systems**. With a strong foundation in **C#/.NET** and **Mathematics**, I combine rigorous analytical problem-solving with modern full-stack development practices to deliver high-quality software solutions.
+I build **agent-orchestrated systems** with a strong emphasis on **absolute observability**, **solid design principles**, and **explicit structure**.
 
----
+Rather than treating agents as scripts or demos, I focus on the *systems around them*: how they coordinate, how they reason over data, how they fail, and—most importantly—how we understand what they’re doing while they run.
 
-## 🚀 About Me
-
-- 🔭 I’m currently working on **Production-Ready .NET APIs** and **Full Stack Web Apps**.
-- 🌱 I’m deeply exploring **Clean Architecture**, **Cloud-Native Systems**, and **DevOps Automation**.
-- 🎓 I hold a **Bachelor's in Mathematics** from the University of Leeds.
-- 💼 I have experience building complex applications with **Next.js**, **FastAPI**, and **ASP.NET Core**.
-- ⚡ Fun fact: I play guitar 🎸 and love rock climbing 🧗‍♂️!
+I’m currently enrolled in the [**Digital Futures – Frontier AI training programme**](https://digitalfutures.com/insights/individuals/frontier-ai-launch-your-journey-to-shape-the-future-of-technology), focused on building practical, production-grade AI systems that shape the future of technology.
 
 ---
 
-## 🛠️ Tech Stack
+## Design Philosophy
 
-### **Backend & Core**
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+My recent work is driven by two core beliefs:
 
-### **Cloud & DevOps**
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+1. **If a system isn’t observable, it isn’t autonomous — it’s just opaque**
+2. **Agents scale through structure, not prompts**
 
-### **Frontend**
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+As systems become more autonomous, the cost of *not* understanding them increases dramatically. My projects aim to push autonomy forward **without sacrificing debuggability, reasoning, or control**.
+
+This philosophy directly led to the creation of **Stageflow** and **Unified Content Protocol (UCP)**.
 
 ---
 
-## 🏆 Featured Projects
+## Stageflow
 
-### 🎯 [JobTracker API - Production Ready .NET 8](https://github.com/Antonio7098/JobTracker)
-> *A production-ready REST API demonstrating enterprise-level .NET development practices.*
-- **Tech**: ASP.NET Core 8, C#, MySQL, Entity Framework Core, Docker, AWS (ECS/Fargate).
-- **Key Features**: Clean Architecture, Repository Pattern, CQRS, FluentValidation, RFC 7807 Error Handling.
-- **DevOps**: Full CI/CD pipeline with GitHub Actions deploying to AWS.
+**Observable, composable DAG orchestration for agentic pipelines (Python)**
 
-### 🗣️ [CoachUp - AI Speech Coaching Platform](https://coach-up-frontend-git-main-antonios-projects-d081dbd9.vercel.app/)
-> *A scalable SaaS platform delivering real-time, interactive user experiences.*
-- **Tech**: Next.js, FastAPI, Convex, Google Cloud Services.
-- **Key Features**: Real-time audio processing, complex state management, background job processing.
+Stageflow was born from a very practical need:
 
-### 🤖 [Stable Flow - Developer Tooling](https://github.com/Antonio7098/stable-flow)
-> *A framework to bring structure and observability to complex software workflows.*
-- **Focus**: Standardised planning methodologies and system observability.
-- **Impact**: Improves reliability and maintainability of automated software processes.
+* I needed to **parallelise complex pipelines**
+* I wanted those pipelines to be **modular and reusable**
+* I wanted to stop rewriting orchestration glue code
+* And I needed **observability as a first-class feature**, not an afterthought
 
-### 🧠 [Elevate - Learning App](https://github.com/Antonio7098/elevate-frontend)
-> *Smart learning platform with advanced data retrieval capabilities.*
-- **Tech**: React, Python, Vector Search, Hierarchical Data Structures.
+Stageflow treats orchestration itself as a core domain. Pipelines are explicit DAGs, stages have clear contracts, and execution is observable by default.
+
+**Key ideas**
+
+* Stages execute as soon as dependencies resolve → maximum parallelism
+* Pipelines are defined fluently and composed safely
+* Cross-cutting concerns live in interceptors, not business logic
+* Events, correlation IDs, and structured logging are built in
+* Async-first execution using `asyncio`
+* Zero external dependencies in the core library
+
+**Stage kinds**
+`TRANSFORM · ENRICH · ROUTE · GUARD · WORK · AGENT`
+
+This makes Stageflow especially well-suited for:
+
+* Multi-step LLM and agent pipelines
+* Guardrailed, observable AI workflows
+* Long-running automation where failures must be understood, not hidden
+
+Stageflow is designed for environments where things *will* fail — and where understanding **what happened, where, and why** matters more than raw throughput.
+
+**Try it out:** `pip install stageflow-core`
+
+**Repo:** [https://github.com/Antonio7098/stageflow](https://github.com/Antonio7098/stageflow)
 
 ---
 
-## 📊 GitHub Stats
+## Unified Content Protocol (UCP / UCM)
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Antonio7098&show_icons=true&theme=radical&hide_border=true" alt="Antonio's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Antonio7098&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
-</div>
+**Graph-native, agent-first representation for structured content**
+
+Unified Content Protocol (UCP) addresses a different but complementary problem:
+
+> *From an agent’s perspective, every data source should look the same.*
+
+Markdown documents, JSON files, databases, HTML pages, code, tables — today, each requires bespoke handling. UCP provides a **single, unified, graph-based interface** for agents to interact with content regardless of origin.
+
+### Graph-Native by Design
+
+At its core, UCP (via **UCM – Unified Content Model**) is **graph-native**:
+
+* Content is represented as nodes (blocks) with explicit edges
+* Blocks are content-addressed and deterministic
+* Relationships are first-class, not inferred from text
+* Traversal is cheap, explicit, and predictable
+
+This makes UCP **naturally optimised for graph traversal by LLMs and agents**. Instead of flattening documents into token-heavy text blobs, agents can walk the graph, follow semantic edges, and operate on structure directly.
+
+### Why This Matters for LLMs
+
+UCP is designed to be:
+
+* **Token-efficient** — structure is encoded once, not repeated
+* **Deterministic** — identical content always hashes to the same ID
+* **Machine-readable** — structure is explicit, not implied
+* **Safe to transform** — edits occur through validated graph operations
+
+To an agent, the following all share the same interface:
+
+* A Markdown document
+* A JSON dataset
+* A database record
+* An HTML page
+
+This enables:
+
+* Structural reasoning instead of text-only heuristics
+* Safer autonomous edits
+* Reproducible transformations
+* Better long-context efficiency
+
+UCP pairs naturally with **Stageflow**, where agents operate inside observable pipelines and reason over graph-structured content.
+
+**Try it out:** `pip install ucp-content`
+
+**Repo:** [https://github.com/Antonio7098/unified-content-protocol](https://github.com/Antonio7098/unified-content-protocol)
 
 ---
 
-## 📫 Connect with Me
+## 24-Hour Testers
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/antonio-borge-rees-298631189)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:antoniorees74@gmail.com)
+**Autonomous reliability loop for continuous system testing**
+
+24-Hour Testers operationalises agentic systems in the real world.
+
+You describe a **System Under Test (SUT)** once, provide a canonical checklist, and agents continuously:
+
+* Execute tests and experiments
+* Write structured findings
+* Generate reports
+* Synthesize new backlog automatically (in infinite mode)
+
+No babysitting. No manual triggering. Just a loop that keeps running.
+
+This project focuses on:
+
+* Long-running autonomy
+* Observable execution
+* Persistent state and resumability
+* Practical reliability engineering using agents
+
+**Repo:** [https://github.com/Antonio7098/24-hour-testers](https://github.com/Antonio7098/24-hour-testers)
+
+---
+
+## Learning Sprints
+
+**Agent-guided framework for deep technical learning**
+
+Learning Sprints formalises how an AI agent should act as a **mentor**, not a tutorial.
+
+It provides structured workflows for:
+
+* Defining learning goals
+* Creating investigative sprints
+* Walking through implementation
+* Marking code and reasoning
+* Adapting questions based on performance
+
+The emphasis is on **deep understanding**, progressive synthesis, and professional habits — not surface-level completion.
+
+**Repo:** [https://github.com/Antonio7098/learning-sprints](https://github.com/Antonio7098/learning-sprints)
+
+---
+
+## How These Pieces Fit Together
+
+All of my recent work shares a common direction:
+
+* **Stageflow** → observable orchestration of agent behaviour
+* **UCP / UCM** → unified, graph-native interface for agent data
+* **24h Testers** → long-running autonomous loops in practice
+* **Learning Sprints** → structured agent-guided cognition
+
+The goal is not “more agents”, but **better systems around agents** — systems that scale in autonomy *without collapsing into opacity*.
+
+---
+
+## 📫 Connect
+
+[LinkedIn](https://linkedin.com/in/antonio-borge-rees-298631189) | [antoniorees74@gmail.com](mailto:antoniorees74@gmail.com)
