@@ -2,7 +2,7 @@
 
 ### Software Engineer · Agentic Orchestration · Frontier AI Systems
 
-I build **agent-orchestrated systems** with a strong emphasis on **absolute observability**, **solid design principles**, and **explicit structure**.
+I build **agent-orchestrated systems** with a strong emphasis on **absolute observability**, **SOLID design principles**, and **explicit structure**.
 
 Rather than treating agents as scripts or demos, I focus on the *systems around them*: how they coordinate, how they reason over data, how they fail, and—most importantly—how we understand what they’re doing while they run.
 
@@ -14,8 +14,8 @@ I’m currently enrolled in the [**Digital Futures – Frontier AI training prog
 
 My recent work is driven by two core beliefs:
 
-1. **If a system isn’t observable, it isn’t autonomous — it’s just opaque**
-2. **Agents scale through structure, not prompts**
+1. **Observability is truth: if it is not observable, it didn't happen.**
+2. **The harness often matters more than the model. Agents scale through context and structure.**
 
 As systems become more autonomous, the cost of *not* understanding them increases dramatically. My projects aim to push autonomy forward **without sacrificing debuggability, reasoning, or control**.
 
@@ -29,12 +29,12 @@ This philosophy directly led to the creation of **Stageflow** and **Unified Cont
 
 Stageflow was born from a very practical need:
 
-* I needed to **parallelise complex pipelines**
+* I needed to **parallelise complex pipelines** to **reduce latency** 
 * I wanted those pipelines to be **modular and reusable**
 * I wanted to stop rewriting orchestration glue code
 * And I needed **observability as a first-class feature**, not an afterthought
 
-Stageflow treats orchestration itself as a core domain. Pipelines are explicit DAGs, stages have clear contracts, and execution is observable by default.
+I realised that designing pipelines was not hard- it is everything else around it, from observability to guardrails to reliability measures. Stageflow treats orchestration itself as a core domain. Pipelines are explicit DAGs, stages have clear contracts, and execution is observable by default.
 
 **Key ideas**
 
@@ -107,6 +107,8 @@ This enables:
 * Better long-context efficiency
 
 UCP pairs naturally with **Stageflow**, where agents operate inside observable pipelines and reason over graph-structured content.
+
+[**See how it works**](https://ucp-landing-page.netlify.app/)
 
 **Try it out:** `pip install ucp-content`
 
