@@ -55,7 +55,9 @@ This makes Stageflow especially well-suited for:
 * Long-running automation where failures must be understood, not hidden
 
 Stageflow is designed for environments where things *will* fail — and where understanding **what happened, where, and why** matters more than raw throughput.
+
 [**See how it works**](stageflow-landing-page.netlify.app)
+
 **Try it out:** `pip install stageflow-core`
 
 **Repo:** [https://github.com/Antonio7098/stageflow](https://github.com/Antonio7098/stageflow)
