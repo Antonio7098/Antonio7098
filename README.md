@@ -1,182 +1,79 @@
 # Hi, I’m **Antonio Borge Rees** 👋
 
-### Software Engineer · Agentic Orchestration · Frontier AI Systems
+**Software Engineer · Agentic Systems · Frontier AI**
 
-I build **agent-orchestrated systems** with a strong emphasis on **absolute observability**, **SOLID design principles**, and **explicit structure**.
+## Overview
 
-Rather than treating agents as scripts or demos, I focus on the *systems around them*: how they coordinate, how they reason over data, how they fail, and—most importantly—how we understand what they’re doing while they run.
+I design and build **agent-orchestrated systems** with a focus on **observability, structure, and reliability**.
 
-I’m currently enrolled in the [**Digital Futures – Frontier AI training programme**](https://digitalfutures.com/insights/individuals/frontier-ai-launch-your-journey-to-shape-the-future-of-technology), focused on building practical, production-grade AI systems that shape the future of technology.
+I’m less interested in flashy agent demos and more interested in the *systems around agents*:
+how they coordinate, how they reason over data, how they fail, and how we can clearly understand what’s happening while they run.
 
----
-
-## Design Philosophy
-
-My recent work is driven by two core beliefs:
-
-1. **Observability is truth: if it is not observable, it didn't happen.**
-2. **The harness often matters more than the model. Agents scale through context and structure.**
-
-As systems become more autonomous, the cost of *not* understanding them increases dramatically. My projects aim to push autonomy forward **without sacrificing debuggability, reasoning, or control**.
-
-This philosophy directly led to the creation of **Stageflow** and **Unified Content Protocol (UCP)**.
+I’m currently part of the **Digital Futures – Frontier AI programme**, building practical, production-grade AI systems.
 
 ---
 
-## Stageflow
+## Goals & Philosophy
 
-**Observable, composable DAG orchestration for agentic pipelines (Python)**
+My work is guided by a few core ideas:
 
-Stageflow was born from a very practical need:
+* **If it isn’t observable, it didn’t happen**
+* **Structure scales agents more than models**
+* **Autonomy without debuggability is a liability**
 
-* I needed to **parallelise complex pipelines** to **reduce latency** 
-* I wanted those pipelines to be **modular and reusable**
-* I wanted to stop rewriting orchestration glue code
-* And I needed **observability as a first-class feature**, not an afterthought
-
-I realised that designing pipelines was not hard- it is everything else around it, from observability to guardrails to reliability measures. Stageflow treats orchestration itself as a core domain. Pipelines are explicit DAGs, stages have clear contracts, and execution is observable by default.
-
-**Key ideas**
-
-* Stages execute as soon as dependencies resolve → maximum parallelism
-* Pipelines are defined fluently and composed safely
-* Cross-cutting concerns live in interceptors, not business logic
-* Events, correlation IDs, and structured logging are built in
-* Async-first execution using `asyncio`
-* Zero external dependencies in the core library
-
-**Stage kinds**
-`TRANSFORM · ENRICH · ROUTE · GUARD · WORK · AGENT`
-
-This makes Stageflow especially well-suited for:
-
-* Multi-step LLM and agent pipelines
-* Guardrailed, observable AI workflows
-* Long-running automation where failures must be understood, not hidden
-
-Stageflow is designed for environments where things *will* fail — and where understanding **what happened, where, and why** matters more than raw throughput.
-
-[**See how it works**](stageflow-landing-page.netlify.app)
-
-**Try it out:** `pip install stageflow-core`
-
-**Repo:** [https://github.com/Antonio7098/stageflow](https://github.com/Antonio7098/stageflow)
+As AI systems become more autonomous, understanding and controlling them matters more—not less. My goal is to push agent autonomy forward **without sacrificing clarity, safety, or control**.
 
 ---
 
-## Unified Content Protocol (UCP / UCM)
+## Project Highlights
 
-**Graph-native, agent-first representation for structured content**
+### **Stageflow**
 
-Unified Content Protocol (UCP) addresses a different but complementary problem:
+*Observable DAG orchestration for agent pipelines (Python)*
 
-> *From an agent’s perspective, every data source should look the same.*
+A framework for building **explicit, observable, parallel agent pipelines**.
 
-Markdown documents, JSON files, databases, HTML pages, code, tables — today, each requires bespoke handling. UCP provides a **single, unified, graph-based interface** for agents to interact with content regardless of origin.
+Stageflow treats orchestration as a first-class problem: pipelines are DAGs, stages have clear contracts, and execution is observable by default.
 
-### Graph-Native by Design
-
-At its core, UCP (via **UCM – Unified Content Model**) is **graph-native**:
-
-* Content is represented as nodes (blocks) with explicit edges
-* Blocks are content-addressed and deterministic
-* Relationships are first-class, not inferred from text
-* Traversal is cheap, explicit, and predictable
-
-This makes UCP **naturally optimised for graph traversal by LLMs and agents**. Instead of flattening documents into token-heavy text blobs, agents can walk the graph, follow semantic edges, and operate on structure directly.
-
-### Why This Matters for LLMs
-
-UCP is designed to be:
-
-* **Token-efficient** — structure is encoded once, not repeated
-* **Deterministic** — identical content always hashes to the same ID
-* **Machine-readable** — structure is explicit, not implied
-* **Safe to transform** — edits occur through validated graph operations
-
-To an agent, the following all share the same interface:
-
-* A Markdown document
-* A JSON dataset
-* A database record
-* An HTML page
-
-This enables:
-
-* Structural reasoning instead of text-only heuristics
-* Safer autonomous edits
-* Reproducible transformations
-* Better long-context efficiency
-
-UCP pairs naturally with **Stageflow**, where agents operate inside observable pipelines and reason over graph-structured content.
-
-[**See how it works**](https://ucp-landing-page.netlify.app/)
-
-**Try it out:** `pip install ucp-content`
-
-**Repo:** [https://github.com/Antonio7098/unified-content-protocol](https://github.com/Antonio7098/unified-content-protocol)
+**Best for:** multi-step LLM workflows, long-running automation, and systems where failures must be understood—not hidden.
 
 ---
 
-## 24-Hour Testers
+### **Unified Content Protocol (UCP / UCM)**
 
-**Autonomous reliability loop for continuous system testing**
+*Graph-native, agent-first content representation*
 
-24-Hour Testers operationalises agentic systems in the real world.
+UCP gives agents a **single, unified interface** to interact with content—whether it’s Markdown, JSON, HTML, databases, or code.
 
-You describe a **System Under Test (SUT)** once, provide a canonical checklist, and agents continuously:
+Content is represented as a **graph**, making it token-efficient, deterministic, and ideal for agent reasoning and traversal.
 
-* Execute tests and experiments
-* Write structured findings
-* Generate reports
-* Synthesize new backlog automatically (in infinite mode)
-
-No babysitting. No manual triggering. Just a loop that keeps running.
-
-This project focuses on:
-
-* Long-running autonomy
-* Observable execution
-* Persistent state and resumability
-* Practical reliability engineering using agents
-
-**Repo:** [https://github.com/Antonio7098/24-hour-testers](https://github.com/Antonio7098/24-hour-testers)
+**Best for:** structural reasoning, safe autonomous edits, and long-context efficiency.
 
 ---
 
-## Learning Sprints
+### **24-Hour Testers**
 
-**Agent-guided framework for deep technical learning**
+*Autonomous reliability testing loop*
 
-Learning Sprints formalises how an AI agent should act as a **mentor**, not a tutorial.
+An always-on agent system that continuously tests a defined system, writes findings, generates reports, and creates backlog items—without manual triggering.
 
-It provides structured workflows for:
-
-* Defining learning goals
-* Creating investigative sprints
-* Walking through implementation
-* Marking code and reasoning
-* Adapting questions based on performance
-
-The emphasis is on **deep understanding**, progressive synthesis, and professional habits — not surface-level completion.
-
-**Repo:** [https://github.com/Antonio7098/learning-sprints](https://github.com/Antonio7098/learning-sprints)
+**Best for:** reliability engineering, long-running autonomy, and real-world agent operations.
 
 ---
 
-## How These Pieces Fit Together
+### **Learning Sprints**
 
-All of my recent work shares a common direction:
+*Agent-guided framework for deep technical learning*
 
-* **Stageflow** → observable orchestration of agent behaviour
-* **UCP / UCM** → unified, graph-native interface for agent data
-* **24h Testers** → long-running autonomous loops in practice
-* **Learning Sprints** → structured agent-guided cognition
+A structured way for agents to act as **mentors**, not tutorials—guiding investigation, implementation, feedback, and adaptive questioning.
 
-The goal is not “more agents”, but **better systems around agents** — systems that scale in autonomy *without collapsing into opacity*.
+**Best for:** deep understanding, professional habits, and skill synthesis.
 
 ---
 
-## 📫 Connect
+## Direction
 
-[LinkedIn](https://linkedin.com/in/antonio-borge-rees-298631189) | [antoniorees74@gmail.com](mailto:antoniorees74@gmail.com)
+All of these projects share a single goal:
+
+> **Build better systems around agents—systems that scale autonomy without collapsing into opacity.**
+
