@@ -9,7 +9,8 @@ I design and build **agent-orchestrated systems** with a focus on **observabilit
 I’m less interested in flashy agent demos and more interested in the *systems around agents*:
 how they coordinate, how they reason over data, how they fail, and how we can clearly understand what’s happening while they run.
 
-I’m currently part of the **Digital Futures – Frontier AI programme**, building practical, production-grade AI systems.
+I’m currently enrolled in the **Digital Futures – Frontier AI training programme**, focused on building practical, production-grade AI systems:
+👉 [https://digitalfutures.com/insights/individuals/frontier-ai-launch-your-journey-to-shape-the-future-of-technology](https://digitalfutures.com/insights/individuals/frontier-ai-launch-your-journey-to-shape-the-future-of-technology)
 
 ---
 
@@ -37,6 +38,10 @@ Stageflow treats orchestration as a first-class problem: pipelines are DAGs, sta
 
 **Best for:** multi-step LLM workflows, long-running automation, and systems where failures must be understood—not hidden.
 
+* 🔗 Landing page: [https://stageflow-landing-page.netlify.app](https://stageflow-landing-page.netlify.app)
+* 📦 Install: `pip install stageflow-core`
+* 💻 Repo: [https://github.com/Antonio7098/stageflow](https://github.com/Antonio7098/stageflow)
+
 ---
 
 ### **Unified Content Protocol (UCP / UCM)**
@@ -49,6 +54,10 @@ Content is represented as a **graph**, making it token-efficient, deterministic,
 
 **Best for:** structural reasoning, safe autonomous edits, and long-context efficiency.
 
+* 🔗 Landing page: [https://ucp-landing-page.netlify.app](https://ucp-landing-page.netlify.app)
+* 📦 Install: `pip install ucp-content`
+* 💻 Repo: [https://github.com/Antonio7098/unified-content-protocol](https://github.com/Antonio7098/unified-content-protocol)
+
 ---
 
 ### **24-Hour Testers**
@@ -58,6 +67,8 @@ Content is represented as a **graph**, making it token-efficient, deterministic,
 An always-on agent system that continuously tests a defined system, writes findings, generates reports, and creates backlog items—without manual triggering.
 
 **Best for:** reliability engineering, long-running autonomy, and real-world agent operations.
+
+* 💻 Repo: [https://github.com/Antonio7098/24-hour-testers](https://github.com/Antonio7098/24-hour-testers)
 
 ---
 
@@ -69,6 +80,8 @@ A structured way for agents to act as **mentors**, not tutorials—guiding inves
 
 **Best for:** deep understanding, professional habits, and skill synthesis.
 
+* 💻 Repo: [https://github.com/Antonio7098/learning-sprints](https://github.com/Antonio7098/learning-sprints)
+
 ---
 
 ## Direction
@@ -77,3 +90,9 @@ All of these projects share a single goal:
 
 > **Build better systems around agents—systems that scale autonomy without collapsing into opacity.**
 
+---
+
+## 📫 Connect
+
+* 🔗 LinkedIn: [https://linkedin.com/in/antonio-borge-rees-298631189](https://linkedin.com/in/antonio-borge-rees-298631189)
+* ✉️ Email: mailto:antoniorees74@gmail.com
