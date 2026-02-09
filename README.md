@@ -29,6 +29,26 @@ As AI systems become more autonomous, understanding and controlling them matters
 
 ## Project Highlights
 
+
+### **Hivemind** *(in active development)*
+
+*CLI-first orchestration and governance for agentic software development*
+
+Hivemind is a **local-first orchestration system** for running multiple AI agents safely against real codebases.
+
+It focuses on the *hard problems* of agentic development:
+planning, parallel execution, scoped autonomy, verification, retries, diffs, commits, and full event-level observability.
+
+Rather than treating agents as scripts or demos, Hivemind treats their work as **engineering activity** — structured, auditable, and recoverable.
+
+**Best for:** parallel agent workflows, multi-repo changes, long-running autonomy, and systems where *failure must be explainable*.
+
+* Landing Page: https://hivemind-landing.netlify.app/
+* Status: in development
+* Repo: https://github.com/Antonio7098/hivemind
+
+---
+
 ### **Stageflow**
 
 *Observable DAG orchestration for agent pipelines (Python)*
@@ -58,25 +78,6 @@ Content is represented as a **graph**, making it token-efficient, deterministic,
 * Landing page: https://ucp-landing-page.netlify.app  
 * Install: `pip install ucp-content`  
 * Repo: https://github.com/Antonio7098/unified-content-protocol
-
----
-
-### **Hivemind** *(in active development)*
-
-*CLI-first orchestration and governance for agentic software development*
-
-Hivemind is a **local-first orchestration system** for running multiple AI agents safely against real codebases.
-
-It focuses on the *hard problems* of agentic development:
-planning, parallel execution, scoped autonomy, verification, retries, diffs, commits, and full event-level observability.
-
-Rather than treating agents as scripts or demos, Hivemind treats their work as **engineering activity** — structured, auditable, and recoverable.
-
-**Best for:** parallel agent workflows, multi-repo changes, long-running autonomy, and systems where *failure must be explainable*.
-
-* Landing Page: https://hivemind-landing.netlify.app/
-* Status: in development
-* Repo: https://github.com/Antonio7098/hivemind
 
 ---
 
