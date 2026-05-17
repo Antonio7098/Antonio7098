@@ -1,119 +1,67 @@
 # Hi, I’m **Antonio Borge Rees** 👋
 
-**Software Engineer · Agentic Systems · Frontier AI**
+Software engineer focused on AI systems, developer tools, and agent workflows.
 
-## Overview
-
-I design and build **agent-orchestrated systems** with a focus on **observability, structure, and reliability**.
-
-I’m less interested in flashy agent demos and more interested in the *systems around agents*:
-how they coordinate, how they reason over data, how they fail, and how we can clearly understand what’s happening while they run.
-
-I’m currently enrolled in the **Digital Futures – Frontier AI training programme**, focused on building practical, production-grade AI systems:
-
-https://digitalfutures.com/insights/individuals/frontier-ai-launch-your-journey-to-shape-the-future-of-technology
+I’m interested in building practical systems around AI agents — orchestration, reliability, observability, and developer experience — rather than standalone demos.
 
 ---
 
-## Goals & Philosophy
+## Projects
 
-My work is guided by a few core ideas:
+### [Hivemind](https://github.com/Antonio7098/hivemind?utm_source=chatgpt.com)
 
-* **If it isn’t observable, it didn’t happen**
-* **Structure scales agents more than models**
-* **Autonomy without debuggability is a liability**
+CLI-first orchestration system for running multiple AI agents against real codebases.
 
-As AI systems become more autonomous, understanding and controlling them matters more—not less. My goal is to push agent autonomy forward **without sacrificing clarity, safety, or control**.
+Focus areas:
 
----
-
-## Project Highlights
-
-
-### **Hivemind** *(in active development)*
-
-*CLI-first orchestration and governance for agentic software development*
-
-Hivemind is a **local-first orchestration system** for running multiple AI agents safely against real codebases.
-
-It focuses on the *hard problems* of agentic development:
-planning, parallel execution, scoped autonomy, verification, retries, diffs, commits, and full event-level observability.
-
-Rather than treating agents as scripts or demos, Hivemind treats their work as **engineering activity** — structured, auditable, and recoverable.
-
-**Best for:** parallel agent workflows, multi-repo changes, long-running autonomy, and systems where *failure must be explainable*.
-
-* Landing Page: https://hivemind-landing.netlify.app/
-* Status: in development
-* Repo: https://github.com/Antonio7098/hivemind
+* Parallel execution
+* Agent coordination
+* Verification and retries
+* Observability and governance
 
 ---
 
-### **Stageflow**
+### [Stageflow](https://github.com/Antonio7098/stageflow?utm_source=chatgpt.com)
 
-*Observable DAG orchestration for agent pipelines (Python)*
+Python framework for building observable agent pipelines and workflows.
 
-A framework for building **explicit, observable, parallel agent pipelines**.
-
-Stageflow treats orchestration as a first-class problem: pipelines are DAGs, stages have clear contracts, and execution is observable by default.
-
-**Best for:** multi-step LLM workflows, long-running automation, and systems where failures must be understood—not hidden.
-
-* Landing page: https://stageflow-landing-page.netlify.app  
-* Install: `pip install stageflow-core`  
-* Repo: https://github.com/Antonio7098/stageflow
+Designed around explicit stages, DAG execution, and traceable runs.
 
 ---
 
-### **Unified Content Protocol (UCP / UCM)**
+### [Unified Content Protocol (UCP)](https://github.com/Antonio7098/unified-content-protocol?utm_source=chatgpt.com)
 
-*Graph-native, agent-first content representation*
+Graph-based content representation for AI systems.
 
-UCP gives agents a **single, unified interface** to interact with content—whether it’s Markdown, JSON, HTML, databases, or code.
-
-Content is represented as a **graph**, making it token-efficient, deterministic, and ideal for agent reasoning and traversal.
-
-**Best for:** structural reasoning, safe autonomous edits, and long-context efficiency.
-
-* Landing page: https://ucp-landing-page.netlify.app  
-* Install: `pip install ucp-content`  
-* Repo: https://github.com/Antonio7098/unified-content-protocol
+Aims to give agents a consistent way to work with structured content across formats.
 
 ---
 
-### **24-Hour Testers**
+### [24-Hour Testers](https://github.com/Antonio7098/24-hour-testers?utm_source=chatgpt.com)
 
-*Autonomous reliability testing loop*
-
-An always-on agent system that continuously tests a defined system, writes findings, generates reports, and creates backlog items—without manual triggering.
-
-**Best for:** reliability engineering, long-running autonomy, and real-world agent operations.
-
-* Repo: https://github.com/Antonio7098/24-hour-testers
+Autonomous testing loop for continuous system validation and reporting.
 
 ---
 
-### **Learning Sprints**
+### [Learning Sprints](https://github.com/Antonio7098/learning-sprints?utm_source=chatgpt.com)
 
-*Agent-guided framework for deep technical learning*
-
-A structured way for agents to act as **mentors**, not tutorials—guiding investigation, implementation, feedback, and adaptive questioning.
-
-**Best for:** deep understanding, professional habits, and skill synthesis.
-
-* Repo: https://github.com/Antonio7098/learning-sprints
+Framework for guided technical learning with AI-assisted feedback and iteration.
 
 ---
 
-## Direction
+## Interests
 
-All of these projects share a single goal:
-
-> **Build better systems around agents—systems that scale autonomy without collapsing into opacity.**
+* Agent orchestration
+* AI developer tooling
+* System reliability
+* Workflow automation
+* Observable AI systems
 
 ---
 
 ## Connect
 
-* LinkedIn: https://linkedin.com/in/antonio-borge-rees-298631189  
+* [LinkedIn](https://linkedin.com/in/antonio-borge-rees-298631189?utm_source=chatgpt.com)
+*
+
 * Email: mailto:antoniorees74@gmail.com
