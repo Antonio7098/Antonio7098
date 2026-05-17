@@ -2,7 +2,15 @@
 
 Software engineer focused on AI systems, developer tools, and agent workflows.
 
-I’m interested in building practical systems around AI agents — orchestration, reliability, observability, and developer experience — rather than standalone demos.
+---
+
+## Current Focus
+
+I have been enjoying building minimal cli tools, using local coding agents such as Opencode and Pi to operate directly on a filesystem within workflows. 
+
+No server. No db. No managing agent orchestration. 
+
+Just simple, useful tools that allow me to get stuff done, refine my vision, and develop features without technical and cognitive overhead.
 
 ---
 
