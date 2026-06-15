@@ -16,6 +16,39 @@ Just simple, useful tools that allow me to get stuff done, refine my vision, and
 
 ## Projects
 
+### AgentWrap
+
+A Go SDK for supervising coding agents from product workflows.
+
+AgentWrap provides a runtime-neutral layer for agent execution, resilience, validation, permissions, and observability. It allows products to integrate agentic coding runtimes without coupling workflow logic to a specific provider or tool.
+
+I built this to make it easier to use agent harnesses reliably inside larger workflows.
+
+Focus areas:
+
+- Runtime abstraction
+- Resilience and retries
+- Output validation and repair
+- Permission governance
+- Observability and auditability
+- Durable run metadata
+
+---
+
+### UltraPlan Go
+
+A local-first CLI for automated technical research and planning.
+
+UltraPlan runs architecture studies against repositories, compares patterns across multiple sources, and generates structured reports and summaries. I mainly use it to study high-quality open source projects and ground implementation plans in real-world examples rather than assumptions.
+
+The findings are combined with project contracts (coding standards and design rules) to explore trade-offs, evaluate approaches, and build implementation plans.
+
+It is designed to run unattended in the background, continuously working through research and planning tasks while leaving all outputs as editable files on disk.
+
+Flow: study -> select -> distill -> reason -> plan (-> execute -> smoke -> review)
+
+---
+
 ### [Hivemind](https://github.com/Antonio7098/hivemind?utm_source=chatgpt.com)
 
 CLI-first orchestration system for running multiple AI agents against real codebases.
