@@ -39,7 +39,7 @@ Focus areas:
 
 A local-first CLI for automated technical research and planning.
 
-UltraPlan runs architecture studies against repositories, compares patterns across multiple sources, and generates structured reports and summaries. I mainly use it to study high-quality open source projects and ground implementation plans in real-world examples rather than assumptions.
+UltraPlan runs architecture studies against elite repositories, compares patterns across multiple sources, and generates structured reports and summaries. I mainly use it to study high-quality open source projects and ground implementation plans in real-world examples and best practices.
 
 The findings are combined with project contracts (coding standards and design rules) to explore trade-offs, evaluate approaches, and build implementation plans.
 
