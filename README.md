@@ -16,7 +16,7 @@ Just simple, useful tools that allow me to get stuff done, refine my vision, and
 
 ## Projects
 
-### AgentWrap
+### [AgentWrap](https://github.com/Antonio7098/agentwrap)
 
 A Go SDK for supervising coding agents from product workflows.
 
@@ -35,7 +35,7 @@ Focus areas:
 
 ---
 
-### UltraPlan Go
+### [UltraPlan Go](https://github.com/Antonio7098/ultraplan-go)
 
 A local-first CLI for automated technical research and planning.
 
