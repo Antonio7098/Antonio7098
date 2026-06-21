@@ -16,6 +16,23 @@ Just simple, useful tools that allow me to get stuff done, refine my vision, and
 
 ## Projects
 
+### [UltraPlan Go](https://github.com/Antonio7098/ultraplan-go)
+
+A local-first CLI for automated technical research and planning.
+
+UltraPlan runs architecture studies against elite repositories, compares patterns across multiple sources, and generates structured reports and summaries. I mainly use it to study high-quality open source projects and ground implementation plans in real-world examples and best practices.
+
+The findings are combined with project contracts (coding standards and design rules) to explore trade-offs, evaluate approaches, and build implementation plans.
+
+It is designed to run unattended in the background, continuously working through research and planning tasks while leaving all outputs as editable files on disk.
+
+**Flow:** study -> select -> distill -> reason -> plan (-> execute -> smoke -> review)
+
+**Prototype**: [.ultra](https://github.com/Antonio7098/.ultra)  
+**Examples:** Study: [ai-agent-systems](https://github.com/Antonio7098/.ultra/tree/main/studies/ai-agent-systems), Plan: [ultraplan-go planning](https://github.com/Antonio7098/.ultra/tree/main/projects/ultraplan-go)
+
+---
+
 ### [AgentWrap](https://github.com/Antonio7098/agentwrap)
 
 A Go SDK for supervising coding agents from product workflows.
@@ -32,23 +49,6 @@ Focus areas:
 - Permission governance
 - Observability and auditability
 - Durable run metadata
-
----
-
-### [UltraPlan Go](https://github.com/Antonio7098/ultraplan-go)
-
-A local-first CLI for automated technical research and planning.
-
-UltraPlan runs architecture studies against elite repositories, compares patterns across multiple sources, and generates structured reports and summaries. I mainly use it to study high-quality open source projects and ground implementation plans in real-world examples and best practices.
-
-The findings are combined with project contracts (coding standards and design rules) to explore trade-offs, evaluate approaches, and build implementation plans.
-
-It is designed to run unattended in the background, continuously working through research and planning tasks while leaving all outputs as editable files on disk.
-
-Flow: study -> select -> distill -> reason -> plan (-> execute -> smoke -> review)
-
-**Prototype**: [.ultra](https://github.com/Antonio7098/.ultra)  
-**Examples:** Study: [ai-agent-systems](https://github.com/Antonio7098/.ultra/tree/main/studies/ai-agent-systems), Plan: [ultraplan-go planning](https://github.com/Antonio7098/.ultra/tree/main/projects/ultraplan-go)
 
 ---
 
