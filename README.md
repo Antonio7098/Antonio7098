@@ -47,6 +47,9 @@ It is designed to run unattended in the background, continuously working through
 
 Flow: study -> select -> distill -> reason -> plan (-> execute -> smoke -> review)
 
+**Prototype**: [.ultra](https://github.com/Antonio7098/.ultra)  
+**Examples:** Study: [ai-agent-systems](https://github.com/Antonio7098/.ultra/tree/main/studies/ai-agent-systems), Plan: [ultraplan-go planning](https://github.com/Antonio7098/.ultra/tree/main/projects/ultraplan-go)
+
 ---
 
 ### [Hivemind](https://github.com/Antonio7098/hivemind?utm_source=chatgpt.com)
